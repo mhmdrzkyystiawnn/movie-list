@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, Link } from 'react-router-dom';
 import MoonLoader from 'react-spinners/MoonLoader';
+import Footer from '../components/Footer';
 
 const MovieDetail = () => {
   const { id } = useParams();
@@ -170,19 +171,7 @@ const MovieDetail = () => {
           </div>
         </div>
 
-        {/* Footer */}
-        <footer className="movie-detail-footer">
-          <p>
-            Data sourced from{' '}
-            <a
-              href="https://www.themoviedb.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              TMDb
-            </a>
-          </p>
-        </footer>
+        <Footer />
       </div>
     </div>
   );

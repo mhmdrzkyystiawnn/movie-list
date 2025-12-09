@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import MovieList from '../components/MovieList';
 import MoonLoader from 'react-spinners/MoonLoader';
+import Footer from '../components/Footer';
 
 const Home = () => {
   const [movies, setMovies] = useState([]);
@@ -141,6 +142,7 @@ const Home = () => {
           <MovieList movies={movies} />
         )}
       </div>
+      <Footer />
     </div>
   );
 };

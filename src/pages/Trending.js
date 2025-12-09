@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import MovieList from '../components/MovieList';
 import MoonLoader from 'react-spinners/MoonLoader';
+import Footer from '../components/Footer';
 
 const Trending = () => {
   const [movies, setMovies] = useState([]);
@@ -94,6 +95,8 @@ const Trending = () => {
           <MovieList movies={movies} />
         )}
       </div>
+
+      <Footer />
     </div>
   );
 };
