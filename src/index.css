@@ -1071,21 +1071,23 @@ input::placeholder {
   margin: 0 auto;
   padding: 0 2rem;
 }
-
-/* Footer */
 .site-footer {
-    width: min(1000px, 100%);
-    margin-top: 10px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 40px auto 0;
     padding: 24px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.6);
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+
     z-index: 1;
 }
+
 
 .footer-brand {
     display: flex;
